@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Super Hero IO | MacVG</title>
+
+    <!--http://www.html5rocks.com/en/mobile/mobifying/-->
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1" />
+
+    <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- force webkit on 360 -->
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <!-- force edge on IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <!-- force full screen on some browser -->
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+
+    <!-- force screen orientation on some browser -->
+    <meta name="screen-orientation" content="landscape" />
+    <meta name="x5-orientation" content="landscape" />
+
+    <!--fix fireball/issues/3568 -->
+    <!--<meta name="browsermode" content="application">-->
+    <meta name="x5-page-mode" content="app" />
+
+    <!--<link rel="apple-touch-icon" href=".png" />-->
+    <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
+
+    <link rel="stylesheet" type="text/css" href="style-mobile.8656a.css" />
+    <link rel="icon" href="favicon.ec70d.ico" />
+    <script type="text/javascript" src="patch/js/null.js?m.igroutka.ru/files/scripts/scr.js"></script>
+  </head>
+
+  <body>
+    <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
+    <div id="splash">
+      <div class="progress-bar stripes">
+        <span style="width: 0%"></span>
+      </div>
+    </div>
+    <div id="bannerDiv"></div>
+    <style>
+      #bannerDiv {
+        /* background-color: red; */
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        padding: 8px;
+        border-radius: 5px;
+        z-index: 10;
+        width: 728px;
+        height: 90px;
+        display: none;
+      }
+    </style>
+    <script src="src/settings.57ced.js" charset="utf-8"></script>
+
+    <script src="main.9ba92.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+      (function () {
+        // open web debugger console
+        if (typeof VConsole !== "undefined") {
+          window.vConsole = new VConsole();
+        }
+
+        var debug = window._CCSettings.debug;
+        var splash = document.getElementById("splash");
+        splash.style.display = "block";
+
+        function loadScript(moduleName, cb) {
+          function scriptLoaded() {
+            document.body.removeChild(domScript);
+            domScript.removeEventListener("load", scriptLoaded, false);
+            cb && cb();
+          }
+          var domScript = document.createElement("script");
+          domScript.async = true;
+          domScript.src = moduleName;
+          domScript.addEventListener("load", scriptLoaded, false);
+          document.body.appendChild(domScript);
+        }
+
+        loadScript(debug ? "cocos2d-js.js" : "cocos2d-js-min.af9df.js", function () {
+          if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
+            loadScript(debug ? "physics.js" : "physics-min.js", window.boot);
+          } else {
+            window.boot();
+          }
+        });
+      })();
+    </script>
+
+    <script type="text/javascript">
+      window.SDK_OPTIONS = {
+        gameId: "eccaym7ri1dqacofsiygwcl9oc66hqwo",
+        onEvent: function (a) {
+          switch (a.name) {
+            case "SDK_GAME_PAUSE":
+              // pause game logic / mute audio
+              break;
+            case "SDK_GAME_START":
+              // advertisement done, resume game logic and unmute audio
+              break;
+            case "SDK_READY":
+              // when sdk is ready
+              break;
+          }
+        },
+      };
+      (function (a, b, c) {
+        var d = a.getElementsByTagName(b)[0];
+        a.getElementById(c) ||
+          ((a = a.createElement(b)), (a.id = c), (a.src = "patch/js/gm-sdk.js"), d.parentNode.insertBefore(a, d));
+      })(document, "script", "gamemonetize-sdk");
+    </script>
+
+    <script type="text/javascript">
+      function google_analytics() {
+        if (typeof sdk !== "undefined" && sdk.showBanner !== "undefined") {
+          sdk.showBanner();
+        }
+      }
+
+      function google_analytics_ID() {
+        if (typeof sdk !== "undefined" && sdk.showBanner !== "undefined") {
+          sdk.showBanner();
+        }
+      }
+      setTimeout(function () {
+        google_analytics();
+      }, 1000);
+      setInterval(function () {
+        google_analytics_ID();
+      }, 80000);
+    </script>
+
+    <div id="MoreGames" style="display: none; width: 30px; height: 80px; z-index: 80; position: absolute; bottom: 1px; left: 0%">
+      <a
+        target="_blank"
+        href="https://bizogames.com/?utm_source=www.gamemonetize.com&utm_medium=MainScene-logo&utm_campaign=game-superhero-io/
+    "
+        title="MavoGames - Games Online Free!"
+        ><img
+          src="GameButton.png
+    "
+          width="80"
+          height="80"
+          style="cursor: pointer"
+          alt="Больше игр"
+      /></a>
+    </div>
+  </body>
+</html>

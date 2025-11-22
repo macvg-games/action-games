@@ -1,0 +1,1 @@
+{"type":"Scene","props":{"width":1280,"height":720},"compId":2,"child":[{"type":"Sprite","props":{"var":"2DRoot"},"compId":3},{"type":"Script","props":{"runtime":"script/GameScript/Game/GameCore/GameCore.ts"},"compId":4}],"loadList":[],"loadList3D":[]}

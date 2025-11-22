@@ -1,0 +1,84 @@
+{
+	"version": "LAYAHIERARCHY:02",
+	"data": {
+		"type": "Sprite3D",
+		"instanceID": 2,
+		"props": {
+			"name": "DinoNode",
+			"active": true,
+			"isStatic": false,
+			"layer": 0,
+			"position": [0, 0, 0],
+			"rotation": [0, 0, 0, -1],
+			"scale": [1, 1, 1]
+		},
+		"components": [],
+		"child": [{
+			"type": "MeshSprite3D",
+			"instanceID": 3,
+			"props": {
+				"name": "Crown",
+				"active": true,
+				"isStatic": false,
+				"layer": 0,
+				"position": [0, 6.25, 1.94],
+				"rotation": [0, 0, 0, -1],
+				"scale": [5, 5, 5],
+				"meshPath": "Assets/Mesh/Crown.lm",
+				"enableRender": true,
+				"materials": [{
+					"path": "Assets/Materials/Crown.lmat"
+				}]
+			},
+			"components": [],
+			"child": []
+		}, {
+			"type": "Sprite3D",
+			"instanceID": 4,
+			"props": {
+				"name": "EnemyDetector",
+				"active": true,
+				"isStatic": false,
+				"layer": 0,
+				"position": [0, 0, 4.45],
+				"rotation": [0, 0, 0, -1],
+				"scale": [1, 1, 1]
+			},
+			"components": [],
+			"child": []
+		}, {
+			"type": "Sprite3D",
+			"instanceID": 5,
+			"props": {
+				"name": "NameLabelRef",
+				"active": true,
+				"isStatic": false,
+				"layer": 0,
+				"position": [-0.21, 4.6, 0],
+				"rotation": [-0.4617486, 0, 0, -0.8870109],
+				"scale": [1, 1, 1]
+			},
+			"components": [],
+			"child": []
+		}, {
+			"type": "MeshSprite3D",
+			"instanceID": 6,
+			"props": {
+				"name": "PlayerCircle",
+				"active": true,
+				"isStatic": false,
+				"layer": 0,
+				"position": [0, 0.44, 0],
+				"rotation": [0, 0, 0, -1],
+				"scale": [0.422, 0.422, 0.422],
+				"meshPath": "Library/unity default resources-Plane.lm",
+				"enableRender": true,
+				"materials": [{
+					"path": "Assets/Materials/PlayerCircle.lmat"
+				}]
+			},
+			"components": [],
+			"child": []
+		}]
+	}
+}

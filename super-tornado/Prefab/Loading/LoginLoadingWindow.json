@@ -1,0 +1,120 @@
+{
+    "type": "View",
+    "props": {
+        "width": 720,
+        "top": 0,
+        "right": 0,
+        "left": 0,
+        "height": 1280,
+        "bottom": 0
+    },
+    "compId": 2,
+    "child": [
+        {
+            "type": "Image",
+            "props": {
+                "top": 0,
+                "skin": "loadingUI/Bg.png",
+                "right": 0,
+                "left": 0,
+                "bottom": 0
+            },
+            "compId": 15
+        },
+        {
+            "type": "Label",
+            "props": {
+                "text": "Loading...",
+                "strokeColor": "#2d2d2d",
+                "stroke": 5,
+                "name": "label_tip",
+                "fontSize": 40,
+                "font": "SimHei",
+                "color": "#e3e3e3",
+                "centerX": 0,
+                "bottom": 220
+            },
+            "compId": 14
+        },
+        {
+            "type": "Script",
+            "props": {
+                "runtime": "script/Module/Loading/View/LoginLoadingUI.js"
+            },
+            "compId": 7
+        },
+        {
+            "type": "Image",
+            "props": {
+                "width": 571,
+                "skin": "loadingUI/loginProBg.png",
+                "sizeGrid": "23,72,24,63",
+                "height": 37,
+                "centerX": 0,
+                "bottom": 173
+            },
+            "compId": 20,
+            "child": [
+                {
+                    "type": "Panel",
+                    "props": {
+                        "width": 562,
+                        "top": 0,
+                        "name": "panel_loading",
+                        "left": 9,
+                        "height": 38
+                    },
+                    "compId": 21,
+                    "child": [
+                        {
+                            "type": "Image",
+                            "props": {
+                                "y": 3,
+                                "x": 0,
+                                "width": 562,
+                                "skin": "loadingUI/loginPro.png",
+                                "sizeGrid": "14,22,14,21",
+                                "renderType": "render",
+                                "height": 27
+                            },
+                            "compId": 22
+                        }
+                    ]
+                },
+                {
+                    "type": "Image",
+                    "props": {
+                        "y": -20,
+                        "x": 65,
+                        "width": 91,
+                        "skin": "loadingUI/icon_dino.png",
+                        "scaleY": 0.7,
+                        "scaleX": -0.7,
+                        "name": "img_loading_icon",
+                        "height": 102
+                    },
+                    "compId": 23
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "props": {
+                "visible": true,
+                "skin": "loadingUI/image_logo.png",
+                "name": "logo",
+                "centerY": -305,
+                "centerX": 14
+            },
+            "compId": 28
+        }
+    ],
+    "loadList": [
+        "loadingUI/Bg.png",
+        "loadingUI/loginProBg.png",
+        "loadingUI/loginPro.png",
+        "loadingUI/icon_dino.png",
+        "loadingUI/image_logo.png"
+    ],
+    "loadList3D": []
+}

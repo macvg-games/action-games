@@ -1,0 +1,39 @@
+{
+	"version":"LAYAHIERARCHY:02",
+	"data":{
+		"type":"MeshSprite3D",
+		"instanceID":0,
+		"props":{
+			"name":"Ocean",
+			"active":true,
+			"isStatic":false,
+			"layer":0,
+			"position":[
+				0,
+				-4,
+				0
+			],
+			"rotation":[
+				0,
+				0,
+				0,
+				-1
+			],
+			"scale":[
+				45,
+				1,
+				45
+			],
+			"meshPath":"Library/unity default resources-Plane.lm",
+			"enableRender":true,
+			"materials":[
+				{
+					"type":"Laya.BlinnPhongMaterial",
+					"path":"Assets/DinosaurRampage/NormalMode/Water_Mat.lmat"
+				}
+			]
+		},
+		"components":[],
+		"child":[]
+	}
+}

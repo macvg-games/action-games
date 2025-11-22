@@ -1,0 +1,84 @@
+{
+	"version": "LAYAHIERARCHY:02",
+	"data": {
+		"type": "Sprite3D",
+		"instanceID": 1579,
+		"props": {
+			"name": "HumanGroup2",
+			"active": true,
+			"isStatic": false,
+			"layer": 0,
+			"position": [-14.34, 0, -10.05],
+			"rotation": [0, 0, 0, -1],
+			"scale": [1, 1, 1]
+		},
+		"components": [],
+		"child": [{
+			"type": "Sprite3D",
+			"instanceID": 1580,
+			"props": {
+				"name": "Boy",
+				"active": true,
+				"isStatic": false,
+				"layer": 0,
+				"position": [0.52, 0, 0.2],
+				"rotation": [0, 0, 0, -1],
+				"scale": [1, 1, 1]
+			},
+			"components": [],
+			"child": [{
+				"type": "MeshSprite3D",
+				"instanceID": 1581,
+				"props": {
+					"name": "Boy",
+					"active": true,
+					"isStatic": false,
+					"layer": 0,
+					"position": [0, 0.09, 0.08],
+					"rotation": [0, 0.7071068, 0, 0],
+					"scale": [1, 1, 1],
+					"meshPath": "Assets/Humans/Man.lm",
+					"enableRender": true,
+					"materials": [{
+						"path": "Assets/Humans/Human.lmat"
+					}]
+				},
+				"components": [],
+				"child": []
+			}]
+		}, {
+			"type": "Sprite3D",
+			"instanceID": 1582,
+			"props": {
+				"name": "Girl",
+				"active": true,
+				"isStatic": false,
+				"layer": 0,
+				"position": [-1.26, 0, -0.3100004],
+				"rotation": [0, 0, 0, -1],
+				"scale": [1, 1, 1]
+			},
+			"components": [],
+			"child": [{
+				"type": "MeshSprite3D",
+				"instanceID": 1583,
+				"props": {
+					"name": "Girl",
+					"active": true,
+					"isStatic": false,
+					"layer": 0,
+					"position": [0, 0.09, 0.08],
+					"rotation": [0, 0.7071068, 0, 0],
+					"scale": [1, 1, 1],
+					"meshPath": "Assets/Humans/Woman.lm",
+					"enableRender": true,
+					"materials": [{
+						"path": "Assets/Humans/Human.lmat"
+					}]
+				},
+				"components": [],
+				"child": []
+			}]
+		}]
+	}
+}

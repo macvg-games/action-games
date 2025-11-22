@@ -1,0 +1,23 @@
+input:focus {
+    outline: 0
+}
+
+#myTextbox {
+    background-color: transparent;
+    border: 0;
+    text-align: center;
+    font-size: 25px
+}
+
+::placeholder {
+    color: #70704c;
+    opacity: 1
+}
+
+:-ms-input-placeholder {
+    color: #70704c
+}
+
+::-ms-input-placeholder {
+    color: #70704c
+}
